@@ -14,8 +14,6 @@ class Vehicle {
         System.out.println("Vehicle Detail: " + brand + " " + model);
     }
 }
-
-// Child Class 1 (Subclass)
 class Car extends Vehicle {
     private int doorCount;
 
@@ -31,7 +29,6 @@ class Car extends Vehicle {
         System.out.println("Opening all " + doorCount + " doors.");
     }
 }
-// Child Class 2 (Subclass)
 class Truck extends Vehicle {
     private double payloadCapacity;
     public Truck(String brand, String model, double payloadCapacity) {
@@ -50,7 +47,6 @@ class Truck extends Vehicle {
 }
 public class VehicleApp {
     public static void main(String[] args) {
-        // ኦብጀክቶችን መፍጠር (Creating objects)
         Car myCar = new Car("Toyota", "Camry", 4);
         Truck myTruck = new Truck("Volvo", "FH16", 25.5);
 
